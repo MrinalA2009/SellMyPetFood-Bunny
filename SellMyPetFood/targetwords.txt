@@ -3,10 +3,6 @@ bunny
 hare
 cottontail
 cotton-tail
-kit
-kitten
-doe
-buck
 warren
 burrow
 hutch
@@ -18,7 +14,6 @@ binky
 fluffle
 nibble
 gnaw
-chew
 carrot
 carrot tops
 lettuce
@@ -27,6 +22,5 @@ kale
 parsley
 cilantro
 dandelion greens
-timothy hay
 alfalfa hay
 rabbit pellets
