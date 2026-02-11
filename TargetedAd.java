@@ -44,10 +44,26 @@ public class TargetedAd {
     /* your code here */
 
     DataCollector dc = new DataCollector();
-    dc.setData("socialMediaPostsSmall.txt", "targetWords.txt");
+    dc.setData("socialMediaPostsSmall.txt", "targetwords.txt");
     
     String userNames = "";
+    String post = dc.getNextPost();
+    while (!post.equals("NONE")) {
+      String targetWord = dc.getNextTargetWord();
+      while (!targetWord.equals("NONE")) {
+        if (post.indexOf(targetWord) != -1) {
+          String userName = post.substring(0, post.indexOf(" "));
+          userNames += userName + " ";
+          break;
+        }
+        targetWord = dc.getNextTargetWord();
+      }
+      post = dc.getNextPost();
+    }
+    //testing to see if the names are actually being stored in user names 
+    System.out.println(userNames);
   }
+}
 
     
-}
+
