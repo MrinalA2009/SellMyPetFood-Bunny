@@ -46,7 +46,8 @@ public class TargetedAd {
     DataCollector dc = new DataCollector();
     dc.setData("socialMediaPostsSmall.txt", "targetWords.txt");
     
-     
+    String userNames = "";
   }
 
+    
 }
