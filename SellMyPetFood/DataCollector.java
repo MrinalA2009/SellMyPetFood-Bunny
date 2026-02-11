@@ -1,3 +1,4 @@
+package SellMyPetFood;
 /*
  * Problem 2.3.1 Sell My Pet Food
  * 
