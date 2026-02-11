@@ -22,6 +22,9 @@ public class DataCollector
   private int currentPost;
   private int currentTargetWord;
 
+  /**
+   * Construct a new DataCollector with empty data and reset indices.
+   */
   public DataCollector()
   {
     socialMediaPosts = new ArrayList<String>();
@@ -110,6 +113,7 @@ public class DataCollector
    * @param filename The name to save the file, must include .txt
    * @param usernames A string containing the usernames of people to target,
    * usernames are separated by a space.
+    * @param advertisement The advertisement text to append for each username
    */
   public void prepareAdvertisement(String filename, String usernames, String advertisement)
   {

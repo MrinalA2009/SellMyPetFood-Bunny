@@ -2,8 +2,16 @@ package SellMyPetFood;
 /*
  * Problem 2.3.1 Sell My Pet Food
  */
+/**
+ * Entry point for building a targeted advertisement list.
+ */
 public class TargetedAd {
 
+  /**
+   * Run the targeted advertising workflow.
+   *
+   * @param args command-line arguments (not used)
+   */
   public static void main(String[] args)
   {
     /*  
