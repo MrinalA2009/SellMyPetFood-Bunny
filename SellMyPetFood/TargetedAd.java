@@ -42,6 +42,9 @@ public class TargetedAd {
 
 
     /* your code here */
+
+    DataCollector dc = new DataCollector();
+    dc.setData("socialMediaPostsSmall.txt", "targetWords.txt");
     
      
   }
