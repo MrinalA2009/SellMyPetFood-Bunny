@@ -62,6 +62,8 @@ public class TargetedAd {
     }
     //testing to see if the names are actually being stored in user names 
     System.out.println(userNames);
+    
+    
   }
 }
 
