@@ -1,4 +1,6 @@
 package SellMyPetFood;
+import java.util.Set;
+import java.util.HashSet;
 /*
  * Problem 2.3.1 Sell My Pet Food
  */
@@ -46,20 +48,24 @@ public class TargetedAd {
     DataCollector dc = new DataCollector();
     dc.setData("socialMediaPosts.txt", "targetwords.txt");
     
-    String userNames = "";
+    // Use a Set to automatically deduplicate usernames
+    Set<String> userNamesSet = new HashSet<>();
     String post = dc.getNextPost();
     while (!post.equals("NONE")) {
       String targetWord = dc.getNextTargetWord();
       while (!targetWord.equals("NONE")) {
         if (post.indexOf(targetWord) != -1) {
           String userName = post.substring(0, post.indexOf(" "));
-          userNames += userName + " ";
+          userNamesSet.add(userName);
           break;
         }
         targetWord = dc.getNextTargetWord();
       }
       post = dc.getNextPost();
     }
+    
+    // Convert Set to space-separated string for prepareAdvertisement method
+    String userNames = String.join(" ", userNamesSet);
     //testing to see if the names are actually being stored in user names 
     System.out.println(userNames);
     
