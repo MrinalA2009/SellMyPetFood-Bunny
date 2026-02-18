@@ -44,7 +44,7 @@ public class TargetedAd {
     /* your code here */
 
     DataCollector dc = new DataCollector();
-    dc.setData("socialMediaPostsSmall.txt", "targetwords.txt");
+    dc.setData("socialMediaPosts.txt", "targetwords.txt");
     
     String userNames = "";
     String post = dc.getNextPost();
